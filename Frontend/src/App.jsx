@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import Navbar from "./components/Navbar";
-import Sidebar from "./components/Sidebar";
+import SideBar from "./components/SideBar";
 import ChatWindow from "./components/ChatWindow";
 import { contacts, botReplies } from "./data/contacts";
 import { getCurrentTime, getRandomReply } from "./utils/helpers";
@@ -115,7 +115,7 @@ export default function ChatApp() {
       />
 
       <div className="flex flex-1 mt-14 overflow-hidden">
-        <Sidebar
+        <SideBar
           contacts={filteredContacts}
           selectedChat={selectedChat}
           onSelectChat={handleSelectContact}
